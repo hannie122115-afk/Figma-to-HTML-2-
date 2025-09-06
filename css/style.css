@@ -43,6 +43,20 @@ a {
   opacity: 0.9;
 }
 
+.section__heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.section__desc {
+  color: #575f66;
+  font-size: 1.8;
+  font-weight: 300;
+  line-height: 1.67;
+}
 /* ============================= header ====================== */
 
 .header {
@@ -168,4 +182,90 @@ a {
 .hero__image--small {
   width: 210px;
   height: 410px;
+}
+
+/* ============================= service ====================== */
+
+.service {
+  padding: 170px 0;
+}
+
+.service__heading {
+  text-align: center;
+}
+
+.service__desc {
+  text-align: center;
+  width: 468px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.service__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.service-item {
+  padding: 21px;
+  display: flex;
+  width: 470px;
+  border-radius: 10px;
+  gap: 19px;
+  transition: 0.25s;
+}
+
+.service-item:hover {
+  position: relative;
+  /* đẩy nó ra khỏi luồng thông thường và không bị che lẫn nhau */
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+  color: white;
+  background: #2e80ce;
+  box-shadow: 0 8px 16px 0 rgba(40, 155, 222, 0.15);
+}
+
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-radius: 30px;
+  background: #eff6fd;
+  color: #10375c;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  transition: 0.25s;
+}
+
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+
+.service-item__desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.service__btn{
+  margin-top: 55px;
 }
