@@ -60,32 +60,32 @@ a {
 }
 
 /* control btn */
-.control{
+.control {
   display: flex;
   column-gap: 18px;
   align-items: center;
 }
 
-.control__btn{
+.control__btn {
   width: 36px;
-height: 36px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid #575F66;
-background-color: #fff;
-cursor: pointer;
-transition: 0.25s;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
-.control__btn:hover{
-  background-color: #2E80CE;
-  border-color: #2E80CE;
+.control__btn:hover {
+  background-color: #2e80ce;
+  border-color: #2e80ce;
   color: #fff;
 }
 
-.control__btn--next{
+.control__btn--next {
   rotate: 180deg;
 }
 /* ============================= header ====================== */
@@ -425,7 +425,7 @@ transition: 0.25s;
   column-gap: 34px;
 }
 
-.team-item__img-bg:hover .team-item__thumb{
+.team-item__img-bg:hover .team-item__thumb {
   transform: scale(1.1);
 }
 
@@ -444,22 +444,69 @@ transition: 0.25s;
   overflow: hidden;
 }
 
-.team-item__name{
-  color: #10375C;
-text-align: center;
-line-height: 1.75; 
-margin-top: 12px;
+.team-item__name {
+  color: #10375c;
+  text-align: center;
+  line-height: 1.75;
+  margin-top: 12px;
 }
 
-.team-item__desc{
-  color: #575F66;
-text-align: center;
-font-size: 1.4rem;
-font-weight: 300;
-line-height: 1.86; 
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86;
 }
 
-.team__control{
+.team__control {
   margin-top: 38px;
   justify-content: center;
+}
+
+/* ============================= install ====================== */
+
+.install__inner {
+  margin: 180px 0 85px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+  height: 427px;
+}
+
+.install__img {
+  position: absolute;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  bottom: 0;
+}
+
+.install__content {
+  max-width: 586px;
+}
+
+.install__heading {
+  max-width: 489px;
+  color: #FFF;
+}
+
+.install__desc {
+  color: #fff;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
+  padding: 18px 0 38px;
+}
+
+.install__row {
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
 }
