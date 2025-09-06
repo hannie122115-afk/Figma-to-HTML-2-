@@ -197,8 +197,7 @@ a {
 .service__desc {
   text-align: center;
   width: 468px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 18px auto 70px;
 }
 
 .service__row {
@@ -266,6 +265,59 @@ a {
   line-height: 1.75;
 }
 
-.service__btn{
+.service__btn {
   margin-top: 55px;
+}
+
+/* ============================= service ====================== */
+
+.work {
+  padding: 100px 0;
+  background-color: #f6fbff;
+}
+
+.work__desc {
+  width: 468px;
+}
+
+.work__list {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.work-item {
+  border-radius: 4px;
+  background: #fff;
+  border: 16px solid #eaf6ff;
+  padding: 43px;
+  transition: 0.25s;
+}
+
+.work-item:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px);
+  /* dịch lên 16px */
+}
+
+.work-item__heading {
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+  margin: 18px 0 10px;
+}
+.work-item__desc {
+  color: #575f66;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-top: 18px;
+}
+
+.work-item__more {
+  margin-top: 18px;
+  display: inline-block;
+  color: #2e80ce;
+  line-height: 1.75;
 }
