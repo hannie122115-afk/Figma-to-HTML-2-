@@ -611,3 +611,33 @@ a {
 .block-item:hover .block-item__more {
   color: #2e80ce;
 }
+
+/* ============================= appoinment ====================== */
+
+.appoinment {
+  margin: 85px 0;
+}
+
+.appoinment__inner {
+  padding: 100px 178px;
+  background-color: #f6fbff;
+  text-align: center;
+}
+
+.appoinment__heading::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  margin: 18px auto 0;
+  background: #2e80ce;
+}
+
+.appoinment__desc {
+  margin: 18px auto 0;
+  max-width: 617px;
+}
+
+.appoinment__btn {
+  margin-top: 38px;
+}
