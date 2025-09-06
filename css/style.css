@@ -98,3 +98,74 @@ a {
 .header__action--login {
   margin-right: 7px;
 }
+
+/* ============================= hero ====================== */
+
+.hero {
+  display: flex;
+  padding-top: 76px;
+  align-items: center;
+  padding-bottom: 110px;
+}
+
+.hero__content {
+  width: 44%;
+}
+
+.hero__media {
+  flex: 1;
+  /* để chiếm hết phần không gian trống còn lại */
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+  margin-top: 22px;
+}
+
+.hero__row {
+  padding-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.hero__images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__image {
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero__image--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
+}
+
+.hero__image--small {
+  width: 210px;
+  height: 410px;
+}
