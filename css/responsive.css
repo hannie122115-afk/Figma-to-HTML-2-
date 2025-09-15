@@ -1,0 +1,62 @@
+/* pc */
+@media (min-width: 992px) {
+}
+
+/* tablet & mobile */
+/* tối đa 991.98 thì áp dùng tablet và mobile */
+@media (max-width: 991.98px) {
+  /* 1. ẩn navbar trên tablet và mobile */
+  .navbar {
+    display: none;
+  }
+  /* 2. chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* 3. căn lại vị trí menu icon */
+  .header-menu__icon {
+    /* nếu không có tổ tiên position:absolute thì phần tử được định vị theo góc trên cùng */
+    position: absolute;
+    top: 36px;
+    left: 0;
+    color: white;
+    width: 27px;
+    height: 27px;
+  }
+
+  /* 4. tạo lớp phủ overlay */
+
+  .menu-overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* bình thường sẽ ẩn đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .menu-checkbox:checked ~ .menu-overlay{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
+
+/* tạm ẩn phần không liên quan */
+.hero, .footer, main{
+  display: none;
+}

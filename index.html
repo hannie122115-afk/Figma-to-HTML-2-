@@ -91,6 +91,15 @@
     <link rel="stylesheet" href="css/reset.css" />
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- animate style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- css style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>shine smile</title>
   </head>
   <body>
@@ -99,7 +108,10 @@
         <div class="header-top">
           <!-- logo -->
           <a href="#!"
-            ><img src="img/logo.svg" alt="shine smile" class="logo"
+            ><img
+              src="img/logo.svg"
+              alt="shine smile"
+              class="logo header__logo"
           /></a>
           <!-- nav -->
           <nav class="navbar">
@@ -157,6 +169,32 @@
         </section>
       </div>
     </header>
+
+    <!-- tablet/mobile header -->
+    <div class="mobile-header">
+      <!-- tablet/mobile menu -->
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox" hidden
+      />
+      <label for="menu-checkbox">
+        <svg
+          class="header-menu__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+
+      <!-- lớp phủ overlay -->
+       <label for="menu-checkbox" class="menu-overlay"></label>
+    </div>
 
     <!-- main -->
     <main>
@@ -263,7 +301,9 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section__heading">How it works</h2>
+          <h2 class="section__heading" data-aos="animate__backOutDown">
+            How it works
+          </h2>
           <p class="section__desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -741,5 +781,15 @@
         </div>
       </div>
     </section>
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+        // thêm vào để sử dụng kết hợp thư viện aos và animate, nhớ thay đổi tên class bắt buộc của animate vào
+      });
+    </script>
   </body>
 </html>

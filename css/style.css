@@ -772,3 +772,12 @@ a {
   line-height: 1.86;
   padding: 28px 0 42px;
 }
+
+/* aos */
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}
+/* thêm code để hiệu ứng không xảy ra trước khi scroll chuột, nhớ thay đổi tên class giống tên class ở phần script */
