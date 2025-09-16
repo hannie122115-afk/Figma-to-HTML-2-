@@ -1,6 +1,6 @@
 /* pc */
 @media (min-width: 992px) {
-  .mobile-header{
+  .mobile-header {
     display: none;
   }
 }
@@ -87,9 +87,38 @@
     display: block;
     font-size: 2rem;
   }
-  .navbar__link:hover{
+  .navbar__link:hover {
     background-color: #00ffff37;
   }
+
+  /* 9. khỐi hero */
+  .hero {
+    flex-direction: column-reverse;
+    row-gap: 50px;
+  }
+  .hero__content {
+    width: 80%;
+    text-align: center;
+    margin: 22px 0;
+  }
+  .hero__row {
+    justify-content: center;
+  }
+  /* 10. service */
+  .service__row{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .service__list{
+    text-align: center;
+  }
+  /* .service__img{
+    width: 100%;
+  } */
+   .service-item{
+    width: 90%;
+    text-align: start;
+   }
 }
 
 /* tablet */
@@ -101,8 +130,7 @@
 }
 
 /* tạm ẩn phần không liên quan */
-/* .hero,
-.footer,
-main {
+/* .hero, */
+.footer {
   display: none;
-} */
+}
