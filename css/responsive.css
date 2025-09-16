@@ -134,14 +134,32 @@
   .about__img--small {
     display: none;
   }
-  .about__img--big{
-width: 100%;
-border-radius: 15px;
-margin: 15px auto;
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px auto;
   }
-  .about-content{
+  .about-content {
     width: 90%;
     text-align: center;
+  }
+
+  /* 13.team */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+
+/* 14. install */
+  .install__img {
+    display: none;
+  }
+  .install__content{
+    width: 90%;
+    margin: 0  auto;
   }
 }
 
