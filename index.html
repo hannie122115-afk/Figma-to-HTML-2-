@@ -201,7 +201,9 @@
         <!-- menu top -->
         <div class="menu-drawer__top">
           <!-- logo -->
-          <a href="#"><img src="img/logo.svg" alt="shine smile" class="logo " /></a>
+          <a href="#"
+            ><img src="img/logo.svg" alt="shine smile" class="logo"
+          /></a>
           <!-- icon close menu -->
           <label for="menu-checkbox">
             <svg
@@ -225,6 +227,18 @@
           // sao chép
           navMobile.innerHTML = navPC.innerHTML;
         </script>
+
+        <!-- reparate ngăn cách -->
+        <div class="separate"></div>
+        <!-- cta action -->
+        <div class="show-on-mobile">
+          <li class="navbar__item">
+                  <a href="#!" class="navbar__link">Log in</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#!" class="navbar__link">Sign in</a>
+                </li>
+        </div>
       </div>
     </div>
 
@@ -333,9 +347,7 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section__heading" >
-            How it works
-          </h2>
+          <h2 class="section__heading">How it works</h2>
           <p class="section__desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.

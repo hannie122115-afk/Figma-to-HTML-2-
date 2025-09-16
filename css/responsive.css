@@ -162,35 +162,138 @@
     margin: 0 auto;
   }
 
-  /* blog */
+  /* 15.blog */
   .block__inner {
     flex-direction: column-reverse;
     row-gap: 30px;
   }
-  .block__content{
+  .block__content {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .block__heading{
+  .block__heading {
     max-width: 90%;
   }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .footer-hidden-tablet{
+  .footer-hidden-tablet {
     display: none;
   }
-  .footer__top{
+  .footer__top {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .show-on-mobile {
+    display: none;
   }
 }
 
 /* mobile */
 @media (max-width: 767.98px) {
+  /* 1. header */
+  .header__action {
+    display: none;
+  }
+  .header-menu__icon {
+    top: 16px;
+  }
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 40px;
+  }
+  .navbar__item {
+    list-style-type: none;
+  }
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+
+  /* 2. hero */
+  .hero__image--small {
+    display: none;
+  }
+  .hero__image--large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__row {
+    flex-direction: column;
+  }
+
+  /* 3. service */
+  .service {
+    padding: 70px 0;
+  }
+  .service__desc {
+    width: 93%;
+  }
+  .service__img {
+    width: 100%;
+    height: auto;
+  }
+  .work__desc {
+    width: 100%;
+  }
+
+  /* 4. work */
+  .work-item {
+    padding: 20px;
+  }
+
+  /* 5. about*/
+  .about__img--big {
+    height: auto;
+  }
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+
+  /* 6. section */
+  .section__heading {
+    font-size: 3rem;
+  }
+
+  /* 7. team */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* 8. install */
+  .install__inner {
+    margin: 40px 0;
+  }
+  .install__inner {
+    padding: 0 8px;
+  }
+
+  /* 9. blog */
+  .block__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .block__heading {
+    text-align: center;
+  }
+
+  /* 10. appoinment*/
+  .appoinment__inner {
+    padding: 30px 5px;
+  }
+
+  /* 11. footer */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
-
-/* tạm ẩn phần không liên quan */
-
